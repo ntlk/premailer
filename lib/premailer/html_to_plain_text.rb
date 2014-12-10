@@ -87,8 +87,8 @@ module HtmlToPlainText
     txt.gsub!(/<\/?[^>]*>/, '')
 
     # decode HTML entities
-    he = HTMLEntities.new
-    txt = he.decode(txt)
+    # he = HTMLEntities.new
+    # txt = he.decode(txt)
 
     txt = word_wrap(txt, line_length)
 
