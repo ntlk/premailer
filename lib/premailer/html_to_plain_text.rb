@@ -81,7 +81,7 @@ module HtmlToPlainText
     txt.gsub!(/<br[\/ ]*>/i, "\n")
 
     # strip style tags
-    txt.gsub!(/<style[^>]*>[^<]*<\/style>/, '')A[MaA[MaAAA]]
+    txt.gsub!(/<style[^>]*>.*?<\/style>/m, '')
 
     # strip remaining tags
     txt.gsub!(/<\/?[^>]*>/, '')
